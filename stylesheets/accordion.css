@@ -1,0 +1,79 @@
+.accordion_section.box.active {
+	display: block !important;
+}
+
+.accordion_section.box.inactive {
+	display: none !important;
+}
+
+.box.accordion_section {
+  margin: 5px;
+  padding: 0px;
+    
+  min-width: 760px; 
+  max-width: 760px;
+
+  border: 3px solid transparent;  
+
+  margin: 7px 5px 7px 5px;
+
+  border: 3px solid transparent;
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;  
+}
+
+.accordion_section > .header {
+  background-color: dimgray;  
+  min-height: 51px;
+  max-height: 51px;
+  margin: 7px 5px 7px 5px;
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
+
+.accordion_section .header h3 {
+  color: darkorange;
+  font-size: 20px;
+  margin: 0px;        
+  margin-left: 10px;
+  line-height: 51px;    
+}
+
+.accordion_section .header h3 i {
+  padding: 0 4px 4px;
+}
+
+.accordion_section > .header .remove {
+  float: right;
+  text-shadow: 2px 2px gray;
+  font-size: 35px;
+  cursor: pointer
+
+}
+
+.box.accordion_section > .content {
+  background-color: white;  
+  margin: 7px 5px 7px 5px;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  padding: 20px;
+
+  max-height: 270px;
+  min-height: 270px;
+  overflow: auto;
+}
+
+.accordion_section > .content h4 {
+  color: gray;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.box.accordion_section > .content p {
+  color: dimgray;
+  font-size: 18px;     
+  text-align: justify;
+}

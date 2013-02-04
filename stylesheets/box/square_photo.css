@@ -1,0 +1,170 @@
+/* square-photo */
+.box.square_photo {
+}
+
+.box.square_photo .upper {
+	min-height: 240px;
+	max-height: 240px;
+}
+
+#profile-empty.box.square_photo .upper {
+	/*background: url(/../../images/default_profile.jpg) no-repeat;*/
+	background: url(file:///Users/Alex/Dropbox/Danrent.dk/Website%20design/Desktop%20Web%20App/danrentsourcecode/images/default_profile.jpg) no-repeat;
+}
+
+#company-profile.box.square_photo .upper {
+	/*background: url(/../../images/default_profile.jpg) no-repeat;*/
+	background: url(file:///Users/Alex/Dropbox/Danrent.dk/Website%20design/Desktop%20Web%20App/danrentsourcecode/images/swan_blured.png) no-repeat;
+	background-color: white;
+}
+
+.box.square_photo .middle {
+	min-height: 40px;
+	max-height: 40px;
+	background-color: white;
+	text-align: center;
+	font-size: 20px;
+	padding: 0px;
+	margin: 0px;
+	color: gray;
+/*	font-family: serif;
+	font: times;
+*/}
+
+.box.square_photo .lower {
+	min-height: 40px;
+	max-height: 40px;
+	color: lightgray;
+}
+
+
+/* landlord-profile-contact */
+#landlord-profile-contact.box.square_photo .middle h3 {
+	padding: 0px;
+	vertical-align: middle;
+	padding-top: 8px;
+	margin: 0px;
+}
+
+#landlord-profile-contact.box.square_photo .lower.contact {
+	background-color: orange;
+	text-align: left;
+	color: white;
+	padding-left: 10px;
+}
+
+#landlord-profile-contact.box.square_photo .lower .subtitle {
+	padding-right: 10px;
+	padding-top: 6px;		
+}
+
+#landlord-profile-contact.box.square_photo .lower.contact h4 {
+	display: inline;
+	margin: 0px;
+	font-size: 22px;
+	vertical-align: middle;
+}
+
+#landlord-profile-contact.box.square_photo .lower.contact span.actions {
+	float: right;
+	padding-left: 4px;
+	vertical-align: middle;
+}
+
+/* profile */
+#profile.box.square_photo .middle h3 {
+	padding: 0px;
+	vertical-align: middle;
+	padding-top: 8px;
+	margin: 0px;
+}
+
+
+#profile.box.square_photo .lower.location {
+	background-color: gray;
+	text-align: center;
+}
+
+#profile.box.square_photo .lower.location h4 {
+	padding-left: 0px;
+	padding-top: 10px;
+	margin: 0px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+
+/* profile-empty */
+#profile-empty.box.square_photo .middle h3 {
+	padding: 0px;
+	vertical-align: middle;
+	padding-top: 8px;
+	margin: 0px;
+}
+
+#profile-empty.box.square_photo .lower.location {
+	background-color: gray;
+	text-align: center;
+}
+
+#profile-empty.box.square_photo .lower.location h4 {
+	padding-left: 0px;
+	padding-top: 10px;
+	margin: 0px;
+	font-size: 18px;
+	vertical-align: middle;
+
+}
+
+/* company-profile */
+#company-profile.box.square_photo .upper.logo {
+	background-color: lightgrey
+}
+
+#company-profile.box.square_photo .upper.logo img {
+	padding: 20px;
+}
+
+#company-profile.box.square_photo .middle h3 {
+	padding: 0px;
+	vertical-align: middle;
+	padding-top: 8px;
+	margin: 0px;
+}
+
+#company-profile.box.square_photo .lower.location {
+	background-color: gray;
+	text-align: center;
+}
+
+#company-profile.box.square_photo .lower.location h4 {
+	padding-left: 0px;
+	padding-top: 10px;
+	margin: 0px;
+	font-size: 18px;
+	vertical-align: middle;
+}
+
+
+/* home-menu */
+#home-menu.box.square_photo .upper {
+	background-color: white;
+}
+
+#home-menu.box.square_photo .upper.icon img {
+	padding: 20px;
+}
+
+#home-menu.box.square_photo .lower.label {
+	background-color: gray;
+	text-align: center;
+}
+
+#home-menu.box.square_photo .lower.label h3 {
+	padding: 0px;
+	vertical-align: middle;
+	padding-top: 6px;
+	margin: 0px;
+	font-size: 22px;
+}
+
+

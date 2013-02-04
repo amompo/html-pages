@@ -1,0 +1,60 @@
+/* property manage empty*/
+.box.normal_area.list_item.property.manage.empty .upper {
+	position: relative;
+}
+
+.box.normal_area.list_item.property.manage.empty .upper .status.indicator {
+	color: blue;
+	left: 45px;
+}
+
+/* property manage for_rent*/
+
+.box.normal_area.list_item.property.manage .upper {
+	position: relative;
+}
+
+.box.normal_area.list_item.property.manage .upper .overlay {
+	position: absolute;
+	z-index: 100;
+	top: 10px;
+	right: 10px;
+	color: white;
+	font-size: 24px;
+}
+
+.box.normal_area.list_item.property.manage .upper .status.indicator {
+	top: 65px;
+	left: 30px;
+	font-size: 38px;	
+}
+
+.box.normal_area.list_item.property.manage.for_rent .upper .status.indicator {
+	color: green;
+	left: 45px;
+}
+
+/* property manage rented*/
+
+.box.normal_area.list_item.property.manage.rented .upper .status.indicator {
+	color: red;
+	left: 45px;
+}
+
+/* property manage stand_by*/
+
+.box.normal_area.list_item.property.manage.stand_by .upper .status.indicator {
+	color: yellow;
+	left: 30px;
+}
+
+/* property manage turn*/
+
+.box.normal_area.list_item.property.manage .upper .indicator {
+	position: absolute;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+	font-size: 24px;
+}
+

@@ -1,0 +1,19 @@
+div#property-top-left  {
+	float: left;
+	display: inline-block;
+}
+
+div#property-top-right {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+
+	min-height: 672px;
+	max-height: 672px;
+
+	min-width: 256px; 
+	max-width: 256px;
+
+/*	border: 1px solid;*/
+}
+

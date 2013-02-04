@@ -1,0 +1,10 @@
+#content-manage-list-items,
+#content-landlord-mail-list-items,
+#content-tenant-mail-list-items,
+#content-favorite-list-items,
+#content-list-items {
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+

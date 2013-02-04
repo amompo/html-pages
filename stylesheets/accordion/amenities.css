@@ -1,0 +1,65 @@
+#amenities-section.accordion_section {  
+  min-height: 718px;
+  max-height: 718px;  
+}
+
+
+#amenities-section.accordion_section > .content {
+  background-color: white;  
+  max-height: 780px;
+  margin: 7px 5px 7px 5px;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  padding: 20px;
+  overflow: auto;
+
+}
+
+
+.accordion_section > .content ul.amenities {
+  background-color: lightgray;
+
+  padding: 5px;
+  margin-bottom: 10px;
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;  
+
+  list-style-type: none;
+}
+
+.accordion_section > .content ul.amenities:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.accordion_section > .content ul.amenities > li.amenity {
+  color: dimgray;
+  display: inline;
+  float: left;
+  background-color: lightgray;
+  padding: 3px;
+  width: 165px;
+  min-width: 165px;
+  max-width: 165px;
+
+}
+
+.accordion_section > .content ul.amenities > li.amenity span {
+  font-size: 16px;
+}
+
+.accordion_section > .content ul.amenities > li.amenity {
+}
+
+
+.accordion_section > .content ul.amenities > li.amenity.active i {
+  color: green;
+}
+
+.accordion_section > .content ul.amenities > li.amenity.inactive i {
+  color: red;
+}
+

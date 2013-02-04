@@ -1,0 +1,124 @@
+#landlord-registration-page #content {
+	width: 1135px;
+}
+
+
+#s3slider {
+    width: 1035px; /* important to be same as image width */
+    height: 583px; /* important to be same as image height */
+    position: relative; /* important */
+    overflow: hidden; /* important */
+
+	border-radius: 20px;    
+}
+ 
+#slides {
+    width: 1035px; /* important to be same as image width or wider */
+    position: absolute; /* important */
+    top: 0; /* important */
+    margin-left: 0; /* important */
+
+	border-radius: 20px;    
+}
+ 
+.slide {
+    float: left; /* important */
+    position: relative; /* important */
+    display: none; /* important */
+
+	border-radius: 20px;    
+}
+
+.slide img {
+	border-radius: 20px;    
+}
+ 
+.slide span {
+	-webkit-border-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius: 20px;
+	-moz-border-radius-topright: 20px;
+	-moz-border-radius-bottomright: 20px;
+	border-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+
+    position: absolute; /* important */
+    left: 0;
+    /*font: 10px/15px Arial, Helvetica, sans-serif;*/
+    padding: 10px 13px;
+    width: 240px;
+    background-color: #000;
+    filter: alpha(opacity=70); /* here you can set the opacity of box with text */
+    -moz-opacity: 0.7; /* here you can set the opacity of box with text */
+    -khtml-opacity: 0.7; /* here you can set the opacity of box with text */
+    opacity: 0.7; /* here you can set the opacity of box with text */
+    color: #fff;
+    display: none; /* important */
+    top: 0; /*
+        if you put top: 0;  -> the box with text will be shown 
+                                at the top of the image
+        if you put bottom: 0;  -> the box with text will be shown 
+                                at the bottom of the image
+    */
+}
+
+#content #info-area {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;		
+
+	width: 1035px;
+}
+
+#previous-slide {
+	left: -40px;
+}
+
+#next-slide {
+	left: 1034px;
+}
+
+
+.slide_shifter {
+	font-size: 60px;
+	position: relative;
+	top: 332px;
+	z-index: 100;
+	color: dimgray;	
+}
+
+
+.slide span h3 {
+	color: orange;
+	font-size: 24px;
+	margin-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.slide span p {
+	color: silver;
+	font-size: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.left {
+	top: 0;
+    left: 0;
+	width: 240px !important;
+	height: 547px;
+}
+.right {
+	right: 0;
+	bottom: 0;
+	width: 240px !important;
+	height: 547px;
+}
+
+ 
+.clear {
+    clear: both;
+}

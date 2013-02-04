@@ -1,0 +1,40 @@
+header#sub-header-sort,
+header#sub-header {
+	width: 100%;
+	height: 70px;
+
+	display: box; 
+	display: -webkit-box; 
+	display: -moz-box; 
+	-webkit-box-align: center; 
+	-moz-box-align: center; 
+	box-align: center;
+}
+
+div#sorter,
+div#filters {
+	display: box; 
+	display: -webkit-box; 
+	display: -moz-box; 
+
+	-webkit-box-flex: 1; 
+	-moz-box-flex: 1; 
+	box-flex: 1; 
+
+/*	border: 1px solid yellow;*/
+}
+
+div#sorter {
+
+/*	border: 1px solid blue;*/
+}
+
+div#clear-all {
+	margin-left: 20px;
+	margin-right: auto;
+}
+
+#sorter .push_right {
+	margin-right: 20px;
+	margin-left: auto;
+}

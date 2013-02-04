@@ -1,0 +1,24 @@
+div#sub-header-static {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1030px;
+
+	display: box; 
+	display: -webkit-box; 
+	display: -moz-box; 
+	-webkit-box-align: middle; 
+	-moz-box-align: middle; 
+	box-align: middle;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+span#favorite-button,
+span#facebook-button {
+	margin-: 20px;
+}
+
+span#favorite-button {
+	margin-left: 20px;
+}

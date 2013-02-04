@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../bootstrap/css/my_bootstrap.css">		
+		<link rel="stylesheet" type="text/css" href="../../../css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/page.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/pages/property_display_page.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/box.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/gallery/gallery.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/misc/property_details.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/box/square_photo.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/box/link_box.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/accordion.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/accordion/description.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/accordion/costs.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/accordion/amenities.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/accordion/period.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/accordion/menu.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/bars.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/bars/header.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/bars/footer.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/bars/sub_footer.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/bars/sub_header_static.css">
+
+
+		<script type="text/javascript" src="../../../javascripts/jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="../../../javascripts/accordion/menu.js"></script>
+		<script type="text/javascript" src="../../bootstrap/js/bootstrap.js"></script>
+
+
+    	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=404370932955421";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+	</head>
+
+
+	<body id="property-display-page">
+
+		<div id="header"></div>
+
+			<header id="main-header-button" class="bar">
+				<div id="search-sentence">
+				</div>
+				<div id="search-results-counter">
+					<div class="counter">
+					</div>				
+				</div>
+				<div id="page-navigation">
+					<div class="navigation">
+						<button class="btn btn-primary btn-large"><a href="html/pages/registration/landlord_registration.html">Rent your home</a></button>
+					</div>				
+				</div>
+			</header>
+
+			<header>	
+				<div id="sub-header-static">
+					<span id="facebook-button">			
+						<button><div class="fb-like" data-href="http://www.danrent.dk/welcome.html" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-action="recommend">Like button</div></button>
+					</span>
+					
+					<span id="favorite-button">
+						<button class="btn btn-danger">
+							<i class="icon-white icon-heart"></i> Add to favorites
+						</button>
+					</span>
+				</div>
+			</header>
+
+
+		<div id="content" class="single_item">
+			
+			<div id="property-top-left">
+				
+				<div id="photo-gallery" class="photo_box">
+					<img src="../../../images/loft.jpg">
+				</div>
+
+				<div id="property-details" class="squares">
+
+					<div id="outer" class="cost">
+					    <div id="inner" class="cost">90000 DKK</div>
+					</div>
+
+					<div id="outer" class="type">
+					    <div id="inner"><i class="icon-home"></i><br>Town house</div>
+					</div>
+
+					<div id="outer" class="size">
+						<div id="inner"><i class="icon-check-empty"></i><br>60 m2</div>
+					</div>
+
+					<div id="outer" class="rooms">
+						<div id="inner"><i class="icon-th-large"></i><br>3 rooms</div>
+					</div>
+
+					<div id="outer" class="bathrooms">
+						<div id="inner"><i class="icon-th"></i><br>10 bathrooms</div>
+					</div>
+
+					<div id="outer" class="state">
+						<div id="inner"><i class="icon-lightbulb"></i><br>Unfurnished</div>
+					</div>
+
+					<div id="outer" class="floor">
+						<div id="inner"><i class="icon-sort"></i><br>4th floor</div>
+					</div>
+
+				</div>
+
+			</div><!-- property-top-left -->
+
+			<div id="property-top-right">
+
+				<div id="landlord-profile-contact" class="box square_photo selectable">
+					<div class="upper">
+						<img src="../../../images/alex-photo.png" width="240" height="240" />
+					
+					</div>
+					<div class="middle name">
+						<h3>Hi, I'm Alex</h3>
+					</div>
+
+					<div id="landlord-profile-contact" class="lower contact">
+						<div class="subtitle">
+							<h4>Contact me</h4>	
+							<span class="actions">
+								<img src="../../../images/phone.png" width="32" height="32">
+								<img src="../../../images/email.png" width="32" height="32">
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<a href="show_map.html">
+					<div class="box rounded link_box list_item contact_options online selectable">
+						<div class="upper">
+							<h3>Location</h3>
+						</div>
+
+						<div class="middle">
+							<img src="../../../images/map.png" width="240" height="180">
+						</div>
+
+						<div class="lower">
+							<h4><span class="icon-plus-sign"></span> Enlarge map</h4>				
+						</div>
+					</div>
+				</a>
+
+			</div><!-- property-top-right -->
+
+			<div id="property-bottom">
+				<div id="property-accordion" class="accordion">
+					<div id="description-section" class="box accordion_section active description">
+
+						<div class="header">
+							<h3><i class="icon-circle"></i> Description<i class="icon-remove remove" ></i></h3>
+						</div>
+
+						<div class="content">
+							<h4>Beautiful apartment in the center of Copenhagen</h4>
+							<p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </br></br> Mauris eget sem augue. Nulla at purus nec leo dignissim malesuada et vitae augue. Praesent consequat neque sed velit vulputate a placerat nunc elementum.</br></br>
+			 
+							Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam vitae ligula tortor, eu luctus nisi. Nunc ut quam vel ante ultricies pretium. Proin pulvinar eros vitae libero auctor consectetur. Morbi risus justo, porttitor nec convallis porttitor, vulputate quis dui. Integer eget libero sem, vel lobortis mi. Aliquam lorem urna, tristique in sagittis vel, mattis eu ligula. Cras posuere est sit amet massa viverra tincidunt. Morbi iaculis quam a lacus molestie tempus. Proin at elit nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse a elit diam.
+
+							Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget sem augue. Nulla at purus nec leo dignissim malesuada et vitae augue. Praesent consequat neque sed velit vulputate a placerat nunc elementum. 
+							 
+							Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam vitae ligula tortor, eu luctus nisi. Nunc ut quam vel ante ultricies pretium. Proin pulvinar eros vitae libero auctor consectetur. Morbi risus justo, porttitor nec convallis porttitor, vulputate quis dui. Integer eget libero sem, vel lobortis mi. Aliquam lorem urna, tristique in sagittis vel, mattis eu ligula. Cras posuere est sit amet massa viverra tincidunt. Morbi iaculis quam a lacus molestie tempus. Proin at elit nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse a elit diam.</p>
+						</div>
+
+					</div>
+					<div id="costs-section" class="box accordion_section active costs">
+						
+						<div class="header">
+							<h3><i class="icon-circle"></i> Costs<i class="icon-remove remove" ></i></h3>
+						</div>
+
+						<div class="content">
+							<div  id="first-month" class="costs_table">
+								<h4>First month</h4>
+								<table>
+									<tr>
+										<td class="cost_label">Deposit</td>
+										<td class="value subtotal">11000 DKK</td>
+									</tr>
+									<tr>
+										<td class="cost_label">Upfront</td>
+										<td class="value subtotal">5500 DKK</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="monthly-rent" class="costs_table">
+								<h4>Montly</h4>
+								<table>
+									<tr>
+										<td class="cost_label">Rent</td>
+										<td class="value">5500 DKK</td>
+									</tr>
+
+									<tr>
+										<td class="cost_label">Utilities</td>
+										<td class="value">400 DKK</td>
+									</tr>
+
+									<tr>
+										<td class="cost_label">Media</td>
+										<td class="value">200 DKK</td>
+									</tr>
+
+									<tr>
+										<td class="cost_label">TOTAL</td>
+										<td class="value subtotal">6500 DKK</td>
+									</tr>
+								</table>
+							</div>
+
+							<div id="at-entrance" class="costs_table">
+								<h4>At entrance</h4>
+								<table>
+									<tr>
+										<td class="cost_label">TOTAL</td>
+										<td class="value total">22000 DKK</td>
+									</tr>
+								</table>
+							</div>
+
+						</div>
+					</div>
+
+					<div id="amenities-section" class="box accordion_section active amenities">
+						
+						<div class="header">
+							<h3><i class="icon-circle"></i> Amenities<i class="icon-remove remove" ></i></h3>
+						</div>
+
+						<div class="content">
+
+							<div class="amenity_category climatization">
+								<h4 class="title">Climatization</h4>
+								<ul class="amenities">
+									<li class="amenity active">
+										<i class="icon-ok-sign"></i>Air conditioning
+									</li>
+									<li class="amenity active">
+										<i class="icon-ok-sign"></i>Heating
+									</li>
+									<li class="amenity inactive">
+										<i class="icon-remove-sign"></i>Fire place
+									</li>
+								</ul>
+							</div>
+
+							<div class="amenity_category">
+								<h4>Electrical</h4>
+								<ul class="amenities">
+									<li class="amenity active">
+											<i class="icon-ok-sign"></i>Fridge
+									</li>
+									<li class="amenity active">
+											<i class="icon-ok-sign"></i>Freezer
+									</li>
+									<li class="amenity inactive">
+											<i class="icon-remove-sign"></i>Oven/Cooking plate
+									</li>
+									<li class="amenity active">
+											<i class="icon-ok-sign"></i>Dish washer
+									</li>
+									<li class="amenity inactive">
+											<i class="icon-ok-sign"></i>Washing machine
+									</li>
+									<li class="amenity active">
+											<i class="icon-remove-sign"></i>Dryer
+									</li>
+									<li class="amenity active">
+											<i class="icon-ok-sign"></i>TV
+									</li>
+									<li class="amenity inactive">
+											<i class="icon-ok-sign"></i>DVD
+									</li>
+									<li class="amenity inactive">
+											<i class="icon-remove-sign"></i>Telephone
+									</li>
+									<li class="amenity active">
+											<i class="icon-ok-sign"></i>Internet/Wi-Fi
+									</li>
+									<li class="amenity inactive">
+											<i class="icon-ok-sign"></i>Music system
+									</li>
+								</ul>
+							</div>					
+							<div class="amenity_category">
+								<h4>Exterior</h4>
+								<ul class="amenities">
+									<li class="amenity active">
+										<i class="icon-remove-sign"></i>Private garden
+									</li>
+									<li class="amenity active">
+										<i class="icon-ok-sign"></i>Private patio
+									</li>
+									<li class="amenity active">
+										<i class="icon-ok-sign"></i>Community garden
+									</li>
+									<li class="amenity active">
+										<i class="icon-remove-sign"></i>Barbecue
+									</li>
+									<li class="amenity active">
+										<i class="icon-ok-sign"></i>Swimming pool
+									</li>
+									<li class="amenity inactive">
+										<i class="icon-ok-sign"></i>Children's playground
+									</li>
+									<li class="amenity active">
+										<i class="icon-remove-sign"></i>Tool shed
+									</li>
+									<li class="amenity inactive">
+										<i class="icon-ok-sign"></i>Bike shed
+									</li>
+									<li class="amenity inactive">
+										<i class="icon-ok-sign"></i>Car parking					
+									</li>
+								</ul>
+							</div>
+							<div class="amenity_category">
+								<h4>Interior</h4>
+								<ul class="amenities">
+									<li class="amenity inactive">
+										<i class="icon-remove-sign"></i>Lift
+									</li>
+									<li class="amenity inactive">
+										<i class="icon-ok-sign"></i>Terrace
+									</li>
+									<li class="amenity active">
+										<i class="icon-ok-sign"></i>Balcony
+									</li>
+									<li class="amenity inactive">
+										<i class="icon-remove-sign"></i>Garage
+									</li>
+									<li class="amenity active">
+										<i class="icon-ok-sign"></i>Laundry room
+									</li>
+									<li class="amenity inactive">
+										<i class="icon-ok-sign"></i>Made room
+									</li>
+									<li class="amenity active">
+										<i class="icon-remove-sign"></i>Sauna
+									</li>
+									<li class="amenity inactive">
+										<i class="icon-ok-sign"></i>Gym
+									</li>
+									<li class="amenity active">
+										<i class="icon-ok-sign"></i>Office
+									</li>
+									<li class="amenity active">
+										<i class="icon-ok-sign"></i>Game room
+									</li>
+									<li class="amenity inactive">
+										<i class="icon-ok-sign"></i>Home cinema<br><br><br>
+									</li>
+								</ul>
+							</div>
+							<div class="amenity_category">
+								<h4>Special</h4>
+								<ul class="amenities">	
+									<li class="amenity active">
+										<i class="icon-ok-sign"></i>Handicap friendly
+									</li>
+									<li class="amenity inactive">
+										<i class="icon-ok-sign"></i>Males only
+									</li>
+									<li class="amenity inactive">
+										<i class="icon-ok-sign"></i>Females only
+									</li>
+									<li class="amenity inactive">
+										<i class="icon-ok-sign"></i>Couples only<br>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="period-section" class="box accordion_section active period">
+						
+						<div class="header">
+							<h3><i class="icon-circle"></i>Period<i class="icon-remove remove" ></i></h3>
+						</div>
+
+						<div class="content">
+							
+							<div id="start_date" class="date box">
+								<h4>Starting<i class="icon-arrow-right"></i></h4>
+							</div>
+
+							<div id="duration" class="box">
+								<i class="icon-time"></i>					
+								<span class="time">1 year, 9 months and 18 days</span>
+							</div>
+
+							<div id="end_date" class="date box">
+								<h4><i class="icon-arrow-left"></i>Ending</h4>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div id="property-bottom-right">
+					
+					<ul id="property-accordion-menu" class="box accordion_menu">
+						
+						<li id="description-menu-item" class="menu_item active">
+					    	<h3><i class="icon-circle indicator"></i> Description</h3>
+					    </li>
+					    
+						<li id="costs-menu-item" class="menu_item active">
+							<h3><i class="icon-circle indicator"></i> Costs</h3>
+						</li>
+
+					   	<li id="amenities-menu-item" class="menu_item active">
+					    	<h3><i class="icon-circle indicator"></i> Amenities</h3>
+					    </li>
+					    
+					    <li id="period-menu-item" class="menu_item active">
+					    	<h3><i class="icon-circle indicator"></i> Period</h3>
+					    </li>
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div> <!-- content -->
+
+		<div id="footer">
+
+			<footer class="bar">
+				<div id="company-logo" class="section">
+					<img src="../../../images/swan_blured.png">
+				</div>
+				<div id="user" class="section">
+					<div id="login">
+						<i class="icon-lock"></i>
+					</div>
+				</div>
+				<div id="navigation-buttons" class="section">
+					<div class="items">
+						<span id="nav-search">
+							<i class="icon-search"></i>
+							<span class="badge badge-warning">4</span>
+						</span>
+						<span id="nav-favorites">
+							<i class="icon-heart"></i>
+							<span class="badge badge-warning">6</span>
+						</span>
+					</div>				
+				</div>
+				<div id="preferences" class="section">
+					<div id="countries" class="flags">
+						<span>
+							<img src="../../../images/danish.png">
+						</span>
+						<span>
+							<img src="../../../images/english.png">
+						</span>				
+					</div>
+				</div>		
+			</footer>
+
+			<footer id="sub-footer">
+				<div id="company-address" class="section">
+					<div id="adress-label">
+						<p>Danrent.dk &copy Maglekildevej. Frederiksberg, Denmark.</p>
+					</div>
+				</div>
+
+				<div id="social-follow" class="section">
+					<div id="items">
+						<span id="facebook-follow">
+							<i class="icon-facebook-sign"></i>
+						</span>
+
+						<span id="twitter-follow">
+							<i class="icon-twitter-sign"></i>
+						</span>
+					</div>
+				</div>
+			</footer>
+
+
+		</div>
+
+		<footer>
+			<a href="../mail/landlord_index.html"><img src="../../../images/next.png" width="50" height="50"></a>
+			<a href="../../../welcome.html"><img src="../../../images/home.png" width="50" height="50"></a>
+		</footer>
+
+	</body>
+</html>
+
+
+

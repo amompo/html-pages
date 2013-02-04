@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../../bootstrap/css/my_bootstrap.css">		
+		<link rel="stylesheet" type="text/css" href="../../../../css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/page.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/pages/property_display_page.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/box.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/gallery/gallery.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/misc/property_details.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/box/square_photo.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/box/link_box.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/accordion.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/accordion/description.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/accordion/costs.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/accordion/amenities.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/accordion/period.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/accordion/menu.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/bars.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/bars/header.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/bars/footer.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/bars/sub_footer.css">
+		<link rel="stylesheet" type="text/css" href="../../../../stylesheets/misc/edit_property_location.css">
+
+		<script type="text/javascript" src="../../../../javascripts/jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="../../../../javascripts/accordion/menu.js"></script>
+		<script type="text/javascript" src="../../../bootstrap/js/bootstrap.js"></script>
+	</head>
+
+
+	<body id="property-edit-page">
+
+		<div id="header"></div>
+
+			<header class="bar">
+				<div id="search-sentence">Find "anywhere" a "property" of any "size" costing "any amount" from "today" for "any period".
+				</div>
+				<div id="search-results-counter">
+					<div class="counter">
+						<span class="badge badge-warning">10</span> results
+					</div>				
+				</div>
+				<div id="page-navigation">
+					<div class="navigation">
+						<button class="btn btn-primary btn-large">Manage properties</button>
+					</div>				
+				</div>
+			</header>
+
+		<div id="content" class="single_item">
+			
+			<div id="post_later">
+				<a href="../management/index.html"><i class="icon-arrow-left"></i>
+				Post property later</a>
+			</div>
+			<div id="property-top-left">
+				
+				<div id="photo-gallery" class="photo_box">
+					<img src="../../../../images/map.png">
+				</div>
+				<div id="search-box">
+					<div id="edit-property-search-location-bar">
+						<form class="search_form" action="input">
+							<input type="text" value="Type your address here">
+							</input>
+							<button class="btn btn-primary"><i class="icon-white icon-search"></i> Search
+							</button>
+						</form>
+					</div>
+				</div>
+
+			</div><!-- property-top-left -->
+
+			<div id="property-top-right">
+
+				<div id="profile-empty" class="box square_photo selectable">
+					<div class="upper">
+					</div>
+					<div class="middle">
+						<h3>Type your name here</h3>
+					</div>
+
+					<div id="profile-empty" class="lower location">
+						<h4>Let us know your location</h4>
+					</div>
+				</div>
+
+				<a href="edit.html">
+					<div id="link-create-property-details" class="box rounded link_box list_item contact_options online selectable">
+						<div class="upper">
+							<h3>Property details</h3>
+						</div>
+
+						<div class="middle">
+							<img src="../../../../images/default_photo.png" width="240" height="180">
+						</div>
+						<div class="lower">
+							<h4><span class="icon-pencil"></span> Edit details</h4>				
+						</div>
+					</div>
+				</a>
+
+			</div><!-- property-top-right -->
+
+			<div id="property-bottom">
+				<div id="address-box">		
+					<div id="edit-property-exact-address-form">
+						<h3>Drag and drop the pin to locate the place to rent and/or use the text fields below to indicate the exact address.
+						</h3>
+						<h4>In case it is not a house:</h4>
+						<form class="search_form" action="input">
+							<input type="text" value="Type floor number">
+							</input>
+						</form>
+						<form class="search_form" action="input">
+							<input type="text" value="Type apartment number or side">
+							</input>
+						</form>
+						<h4>Current address:</h4>
+						<p>Lergravsvej 19, 2300 Copenhagen</p>
+						<button id="save-button" class="btn btn-primary"><i class="icon-white icon-search"></i> Save location
+						</button>
+					</div>
+				</div>
+			</div>
+
+		</div> <!-- content -->
+
+		<div id="footer">
+
+			<footer class="bar">
+				<div id="company-logo" class="section">
+					<img src="../../../../images/swan_blured.png">
+				</div>
+				<div id="registered-user" class="section">
+					<span>
+						<div id="log_out">
+							<i class="icon-unlock"></i>
+							<span>"username"</span>
+						</div>
+					</span>
+				</div>
+				<div id="registered-navigation-buttons" class="section">
+					<div class="items">
+						<span id="nav-search">
+							<i class="icon-search"></i>
+							<span class="badge badge-warning">4</span>
+						</span>
+						<span id="nav-favorites">
+							<i class="icon-heart"></i>
+							<span class="badge badge-warning">6</span>
+						</span>
+						<span id="nav-mail">
+							<i class="icon-mail"></i>
+							<span class="badge badge-warning">8</span>
+						</span>
+
+					</div>				
+				</div>
+				<div id="registered-preferences" class="section">
+					<div id="countries" class="flags">
+						<span>
+							<img src="../../../../images/danish.png">
+						</span>
+						<span>
+							<img src="../../../../images/english.png">
+						</span>				
+					</div>
+				</div>		
+			</footer>
+
+
+			<footer id="sub-footer">
+				<div id="company-address" class="section">
+					<div id="adress-label">
+						<p>Danrent.dk &copy Maglekildevej. Frederiksberg, Denmark.</p>
+					</div>
+				</div>
+
+				<div id="social-follow" class="section">
+					<div id="items">
+						<span id="facebook-follow">
+							<i class="icon-facebook-sign"></i>
+						</span>
+
+						<span id="twitter-follow">
+							<i class="icon-twitter-sign"></i>
+						</span>
+					</div>
+				</div>
+			</footer>
+
+
+		</div>
+
+		<footer>
+			<a href="../../mail/landlord_index.html"><img src="../../../../images/next.png" width="50" height="50"></a>
+			<a href="../../../../welcome.html"><img src="../../../../images/home.png" width="50" height="50"></a>
+		</footer>
+
+	</body>
+</html>
+
+
+

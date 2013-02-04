@@ -1,0 +1,23 @@
+/* Normal area Box */
+.box.normal_area {
+}
+
+.box.normal_area .upper {
+	min-height: 180px;
+	max-height: 180px;
+}
+
+.box.normal_area .middle {
+	min-height: 106px;
+	max-height: 106px;
+	padding-top: 4px;
+	background-color: white;
+
+}
+
+.box.normal_area .lower {
+	min-height: 30px;
+	max-height: 30px;
+	background-color: dimgray;
+	color: orange;
+}

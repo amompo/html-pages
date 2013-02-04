@@ -1,0 +1,52 @@
+/* Content*/
+
+#costs-section.box.accordion_section {
+  max-height: 390px;
+  min-height: 390px;
+}
+
+#costs-section.box.accordion_section .content {
+  max-height: 268px;
+  min-height: 268px;
+  padding-top: 15px;
+  padding: 20px;
+}
+
+#costs-section.box.accordion_section .content h4 {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.box.accordion_section > .content table {
+  color: dimgray;
+  font-size: 15px;
+  margin-bottom: 5px;
+  table-layout: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box.accordion_section > .content td {
+  font-size: 19px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.box.accordion_section > .content td.cost_label {
+  background-color: silver;
+  padding-left: 10px;
+}
+
+.box.accordion_section > .content td.value {
+  background-color: lightgray;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.box.accordion_section > .content td.value.subtotal {
+  background-color: orange;
+}
+
+.box.accordion_section > .content td.value.total {
+  background-color: darkorange;
+}

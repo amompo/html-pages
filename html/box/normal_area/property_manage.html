@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../../css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/page.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/box.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/box/normal_area.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/box/normal_area/list_item.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/box/normal_area/list_item/property_manage.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/box/flip.css">
+
+		<script type="text/javascript" src="../../../javascripts/jquery-1.9.0.js"></script>
+		
+		<script type="text/javascript">
+			// called when document has finished loading
+			$(function() {
+				// find all flip elements
+     			var flippers = $('.turnable .overlay.flip');
+
+     			// add click handler to each flip element
+     			flippers.click(function(event) {
+     				// go 2 steps up to find box element
+     				var box = $(this).parent().parent();
+     				var side = box.find('.side');
+					var status_indicator = box.find('.status.indicator');
+					     				
+     				side.toggleClass('hide');
+					status_indicator.toggleClass('hide');     				
+				});
+    		});			
+		</script>
+	</head>
+	<body>
+		<h1>list_item property manage</h1>
+
+		<div class="box rounded normal_area list_item property manage empty selectable">
+			<div class="upper">
+				<h5 class="status indicator">Empty</h5>
+				<img src="../../../images/default_photo.png" width="240" height="180" />
+			</div>
+			<div class="middle">
+				<ul class="actions">
+					<li>Create new property</li>
+				</ul>
+			</div>
+
+			<div class="lower">
+				<div>
+					<h4 class="cost"></h4>
+					<ul class="actions">
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="box rounded normal_area list_item property manage for_rent turnable selectable">
+			<div class="upper">
+				<span class="indicator icon-star rentability good side"></span>
+				<h5 class="status indicator hide">For rent</h5>
+				<span class="overlay icon-refresh flip"></span>
+				<img src="../../../images/photo4.png" width="240" height="180" />
+			</div>
+			<div class="middle">
+				<div class="side info">
+					<h3>Beautiful title</h3>
+					<ul class="display">
+						<li>55 m2 apartment on 4th floor</li>
+						<li>2/1 Furnished rooms</li>
+						<li>Valby, Copenhagen, DK</li>
+						<li>12/5/2012 - 12/5/2013</li>
+					</ul>
+				</div>
+
+				<div class="side management hide">
+					<ul class="actions">
+						<li>Set to "Rented out"</li>
+						<li>Set to "Stand by"</li>
+						<li>Set to "Edit property"</li>
+						<li>Set to "Delete property"</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="lower">
+				<div class="side info">
+					<h4 class="cost">6500 DKK</h4>
+					<ul class="actions">
+						<li class="lower icon-heart action favorite on"></li>
+						<li class="lower icon-globe action map"></li>
+					</ul>
+				</div>					
+			</div>
+		</div>
+
+
+		<div class="box rounded normal_area list_item property manage rented turnable selectable">
+			<div class="upper">
+				<span class="indicator icon-star rentability med side"></span>
+				<h5 class="status indicator hide">Rented</h5>
+				<span class="overlay icon-refresh flip"></span>			
+				<img src="../../../images/photo4.png" width="240" height="180" />
+			</div>
+			<div class="middle">
+				<div class="side info">
+					<h3>Beautiful title</h3>
+					<ul class="display">
+						<li>55 m2 apartment on 4th floor</li>
+						<li>2/1 Furnished rooms</li>
+						<li>Valby, Copenhagen, DK</li>
+						<li>12/5/2012 - 12/5/2013</li>
+					</ul>
+				</div>
+
+				<div class="side management hide">
+					<ul class="actions">
+						<li>Set to "Rented out"</li>
+						<li>Set to "Stand by"</li>
+						<li>Set to "Edit property"</li>
+						<li>Set to "Delete property"</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="lower">
+				<div class="side info">
+					<h4 class="cost">6500 DKK</h4>
+					<ul class="actions">
+						<li class="lower icon-heart action favorite on"></li>
+						<li class="lower icon-globe action map"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="box rounded normal_area list_item property manage stand_by turnable selectable">
+			<div class="upper">
+				<span class="indicator icon-star rentability bad side"></span>
+				<h5 class="status indicator hide">Stand by</h5>
+				<span class="overlay icon-refresh flip"></span>
+				<img src="../../../images/photo4.png" width="240" height="180" />
+			</div>
+			<div class="middle">				
+				<div class="side info">
+					<h3>Beautiful title</h3>
+					<ul class="display">
+						<li>55 m2 apartment on 4th floor</li>
+						<li>2/1 Furnished rooms</li>
+						<li>Valby, Copenhagen, DK</li>
+						<li>12/5/2012 - 12/5/2013</li>
+					</ul>
+				</div>
+
+				<div class="side management hide">
+					<ul class="actions">
+						<li>Set to "Rented out"</li>
+						<li>Set to "Stand by"</li>
+						<li>Set to "Edit property"</li>
+						<li>Set to "Delete property"</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="lower">
+				<div class="side info">
+					<h4 class="cost">6500 DKK</h4>
+					<ul class="actions">
+						<li class="lower icon-heart action favorite on"></li>
+						<li class="lower icon-globe action map"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="box rounded normal_area list_item property manage normal turnable selectable">
+			<div class="upper">
+				<span class="indicator icon-star rentability side"></span>
+				<span class="overlay icon-refresh flip"></span>
+				<img src="../../../images/photo4.png" width="240" height="180" />
+			</div>
+			<div class="middle">
+				<div class="side info">
+					<h3>Beautiful title</h3>
+					<ul class="display">
+						<li>55 m2 apartment on 4th floor</li>
+						<li>2/1 Furnished rooms</li>
+						<li>Valby, Copenhagen, DK</li>
+						<li>12/5/2012 - 12/5/2013</li>
+					</ul>
+				</div>
+
+				<div class="side management hide">
+					<ul class="actions">
+						<li>Set to "Rented out"</li>
+						<li>Set to "Stand by"</li>
+						<li>Set to "Edit property"</li>
+						<li>Set to "Delete property"</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="lower">
+				<div class="side info">
+					<h4 class="cost">6500 DKK</h4>
+					<ul class="actions">
+						<li class="lower icon-heart action favorite on"></li>
+						<li class="lower icon-globe action map"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<a href="property_rentability.html"><img src="../../../images/next.png" width="50" height="50"></a>
+			<a href="../../../welcome.html"><img src="../../../images/home.png" width="50" height="50"></a>
+		</footer>
+
+	</body>
+</html>

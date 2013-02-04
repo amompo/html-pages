@@ -1,0 +1,171 @@
+#tenant-message-list {
+	float: right;
+}
+
+#landlord-message-list {
+	float: left;
+}
+
+ul.thread {
+	padding: 0px;
+}
+
+li.message {
+	list-style: none;
+	min-height: 170px;
+	max-width: 820px;
+	min-width: 820px;
+	background-color: white;
+	margin-bottom: 20px;	
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
+    overflow: hidden;   
+}
+
+li.landlord_message {
+	background-color: dimgray;
+}
+
+.message_date h5 {
+	color: dimgray;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px;
+	margin: 0px;
+}
+
+#landlord-message-list .message_date h5 {
+	color: lightgray;
+}
+
+
+.message_text {
+	min-height: 130px;
+	max-width: 650px;
+	min-width: 650px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	background-color: lightgray;
+
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
+    overflow: hidden;
+
+    display: inline;
+    float: left;
+}
+
+.landlord.thread .message_text {
+	float: right;
+}
+
+.message_content {
+	height: 140px;
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.message_text p {
+	font-size: 18px;
+	margin: 20px;
+	text-align: justify;
+	color: dimgray;
+}
+
+.message_profile {
+	max-width: 100px;
+	min-height: 130px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+
+	background-color: white;
+
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
+    overflow: hidden;
+
+    display: inline;
+    float: right;
+}
+
+
+.message_profile img {
+	max-width: 100px;
+	min-height: 100px;
+
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
+    height: 50px;
+    overflow: hidden;
+
+    display: inline;
+}
+
+.message_profile .sender_name h6 {
+	font-size: 12px;
+	color: dimgray;
+	margin: 1px;
+	text-align: center;
+}
+
+
+/* message_text_new */
+
+.message_text_new textarea {
+	min-width: 610px;
+	min-height: 200px;
+
+	font-size: 18px;
+	font-family: times;
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: dimgray;
+
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
+    overflow: auto;
+
+    display: inline;
+    float: left;
+
+    background-color: lightgray;
+}
+
+.landlord.thread .message_text_new {
+	float: right;
+}
+
+#send-button {
+	clear: both;	
+}
+
+
+#send-button button {
+	width: 130px;
+	height: 45px;
+	display: block;	
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: 20px;
+}
+
+.landlord.thread #send-button button {
+	margin-right: 20px;
+	margin-left: auto;
+}

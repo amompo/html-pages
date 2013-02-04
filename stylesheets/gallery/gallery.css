@@ -1,0 +1,21 @@
+#photo-gallery.photo_box {
+	margin: 0px;
+	padding: 0px;
+
+	min-height: 583px;
+	max-height: 583px;
+
+	min-width: 775px; 
+	max-width: 775px;
+
+/*	border: 1px solid;
+*/}
+
+#photo-gallery.photo_box img {
+	margin: 5px;
+	min-height: 573px;
+	max-height: 573px;
+
+	min-width: 765px; 
+	max-width: 765px;
+} 

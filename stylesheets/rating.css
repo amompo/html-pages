@@ -1,0 +1,27 @@
+.rating {
+    direction: rtl;
+    font-size: 16px;
+    cursor: pointer;    
+}
+
+/* hearts */
+.rating span.star {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+}
+
+/*.rating span.star:hover ~ span.star::before*/
+.rating span.star:hover:before,
+.rating span.star:hover ~ span.star:before {
+    content: "\f004";
+    color: red;
+    text-shadow: 1px 1px gray;    
+}
+
+span.star::before {
+    content: "\f08a";
+    /* padding-right: 5px; */
+    color: #999999;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../bootstrap/css/my_bootstrap.css">		
+		<link rel="stylesheet" type="text/css" href="../../../css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/page.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/pages/property_display_page.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/pages/registration_page.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/box.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/gallery/gallery.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/misc/property_details.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/box/square_photo.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/box/link_box.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/accordion.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/accordion/description.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/accordion/costs.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/accordion/amenities.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/accordion/period.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/accordion/menu.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/bars.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/bars/header.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/bars/footer.css">
+		<link rel="stylesheet" type="text/css" href="../../../stylesheets/bars/sub_footer.css">
+
+		<script type="text/javascript" src="../../../javascripts/jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="../../../javascripts/accordion/menu.js"></script>
+		<script type="text/javascript" src="../../../bootstrap/js/bootstrap.js"></script>
+
+		<script type="text/javascript" src="../../../javascripts/s3Slider.js"></script>
+
+		<script type="text/javascript">
+$(document).ready(function() { 
+    var slider = $('#s3slider').s3Slider({
+        timeOut: 4000,
+        items: '#s3slider #slides .slide',
+        itemsSpan: '#s3slider #slides .slide span',
+        readFactors: [1,2,2,2,2] /* adjust read speed for each slide - lower is faster */
+    });
+
+    console.log('slider', slider);
+
+    $('#previous-slide').click(function() {
+    	var current = slider.current;
+    	var items 	= slider.items;
+
+		console.log('current', current);
+		console.log('items', items);
+
+        var currNo 	= jQuery.inArray(current, items) - 1
+		console.log('currNo', currNo);
+
+        currNo = (currNo == items.length) ? 0 : (currNo - 1);
+        console.log('currNo', currNo);
+        slider.current = items[currNo];
+    });
+});		
+		</script>
+	</head>
+
+
+	<body id="landlord-registration-page">
+
+		<div id="header"></div>
+	
+			<header id="main-header-button" class="bar">
+				<div id="search-sentence">
+				</div>
+				<div id="search-results-counter">
+					<div class="counter">
+					</div>				
+				</div>
+				<div id="page-navigation">
+					<div class="navigation">
+						<button class="btn btn-primary btn-large">Rent your home</button>
+					</div>				
+				</div>
+			</header>
+
+		<div id="content" class="single_item">
+
+	<div id="info-area">		
+		<span id="previous-slide" class="icon-angle-left slide_shifter"></span>
+		<span id="next-slide" class="icon-angle-right slide_shifter"></span>
+
+		<div id="s3slider">
+			<ul id="slides">
+				<li class="slide">
+					<img src="../../../images/registration_slidder/direct_contact.jpg"/>
+					<span class="left">
+						<h3 class="title">Direct contact</h3>
+						<div class="text">
+							<p>
+								Get no hasle from real estate agencies and contact the tenants directly.
+							</p>
+							<p>
+								Make your own deals directly, from person to person.
+							</p>
+						</div>
+					</span>
+				</li>
+				<li class="slide">
+					<img src="../../../images/registration_slidder/how_much.jpg"/>
+					<span class="left">
+						<h3 class="title">How much?</h3>
+						<div class="text">
+							<p>
+								It will cost you nothing at all! The full service is FREE for you.
+							</p>
+							
+							<p>
+								You can post up to 3 properties for FREE.
+							</p>
+							
+							<p>
+								Soon you will have the choice to post more properties and even feature your property to outstand it from the rest by being at the top of the results. 
+							</p>
+							<p>
+								We are working hard to get the service working.
+							</p>							
+						</p>
+					</span>
+				</li>
+				<li class="slide">
+					<img src="../../../images/registration_slidder/rent_support.jpg"/>
+					<span class="left">
+						<h3 class="title">Rent support</h3>
+						<div class="text">
+							<p>
+								We are still working to provide you with a FREE rental contract so you can sign it with your tenant.
+							</p>						
+							<p>
+								We will even prefill it for you with the info you chose to provide us.
+							</p>						
+							<p>
+								You will soon get FREE basic legal counseling by maill to help you understand how to make your rental experience a smooth one.
+							</p>
+						</div>
+					</span>
+				</li>
+				<li class="slide">
+					<img src="../../../images/registration_slidder/privacy.jpg"/>
+					<span class="left">
+						<h3 class="title">Privacy</h3>
+						<div class="text">
+							<p>
+								This is so important for us. We hate giving information online ourselves, so we protect your data like a hand full of diamonts.
+							</p>						
+							<p>
+ 								Be sure that your data will be kept only for internal service analysis and to help you find more fitted tenants for your property. No data will be given to thirth party entities.
+							</p>						
+							<p>
+ 								We are working hard to implement some cool new features to control even more you privacy and your contact preferences.
+							</p>
+						</div>
+					</span>
+				</li>
+
+				<li class="slide">
+					<img src="../../../images/registration_slidder/trust_status.png"/>
+					<span class="left">
+						<h3 class="title">Trust Status</h3>
+						<div class="text">
+							<p>
+								Soon we will integrate tenant profiles so that you can see their "Trust status" by seeing the reviews and comments given by other users.
+ 							</p>
+ 							<p>
+								We are now developing a feature for you to get verified via NemID so that your "Trust status" becomes even higher to other users.
+ 							</p>
+							<p>
+								Sign in with Facebook to use future social features that Danrent will provide.
+							</p>
+						</div>
+					</span>
+				</li>
+
+
+		        <div class="clear slide"></div>
+		    </ul>
+		</div>
+	</div> <!-- info-area -->
+
+				<div id="#signing-providers">
+					<div id="external">
+<!-- 						<div id="facebook" class="provider">
+							<img src="facebook_logo.png"/>
+						</div>
+						<div id="twitter" class="provider">
+							<img src="twitter_logo.png"/>
+						</div>
+ -->					
+					</div>
+				</div>
+			</div>
+		</div> <!-- content -->
+
+		<div id="footer">
+
+			<footer class="bar">
+				<div id="company-logo" class="section">
+					<img src="../../../images/swan_blured.png">
+				</div>
+				<div id="user" class="section">
+					<div id="login">
+						<i class="icon-lock"></i>
+					</div>
+				</div>
+				<div id="navigation-buttons" class="section">
+					<div class="items">
+						<span id="nav-search">
+							<i class="icon-search"></i>
+							<span class="badge badge-warning">4</span>
+						</span>
+						<span id="nav-favorites">
+							<i class="icon-heart"></i>
+							<span class="badge badge-warning">6</span>
+						</span>
+					</div>				
+				</div>
+				<div id="preferences" class="section">
+					<div id="countries" class="flags">
+						<span>
+							<img src="../../../images/danish.png">
+						</span>
+						<span>
+							<img src="../../../images/english.png">
+						</span>				
+					</div>
+				</div>		
+			</footer>
+
+			<footer id="sub-footer">
+				<div id="company-address" class="section">
+					<div id="adress-label">
+						<p>Danrent.dk &copy Maglekildevej. Frederiksberg, Denmark.</p>
+					</div>
+				</div>
+
+				<div id="social-follow" class="section">
+					<div id="items">
+						<span id="facebook-follow">
+							<i class="icon-facebook-sign"></i>
+						</span>
+
+						<span id="twitter-follow">
+							<i class="icon-twitter-sign"></i>
+						</span>
+					</div>
+				</div>
+			</footer>
+
+
+		</div>
+
+		<footer>
+			<a href="../mail/landlord_index.html"><img src="../../../images/next.png" width="50" height="50"></a>
+			<a href="../../../welcome.html"><img src="../../../images/home.png" width="50" height="50"></a>
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../../bootstrap/css/my_bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../../stylesheets/page.css">
+		<link rel="stylesheet" type="text/css" href="../../stylesheets/bars/sub_header.css">
+    
+	<!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap-responsive.css"> -->
+
+		<script type="text/javascript" src="../../javascripts/jquery-1.9.0.js"></script>
+    	<script type="text/javascript" src="../../bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.dropdown-toggle').dropdown();
+			});
+		</script>
+	</head>
+
+	<body>
+		<h1>sub_header</h1>
+
+		<header id="sub-header">
+
+			<div id="filters">
+				<div id="clear-all">
+					<button class="btn btn-inverse"><i class="icon-white icon-remove-circle"></i> Clear all filters</button>
+				</div>
+			</div>
+
+			<div id="sorter">
+				<div class="push_right">
+					<div id="properties-sorter" class="btn-group">
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Sort properties by
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">name</a></li>
+							<li><a href="#">date</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<footer>
+			<a href="sub_header_sort.html"><img src="../../images/next.png" width="50" height="50"></a>
+			<a href="../../welcome.html"><img src="../../images/home.png" width="50" height="50"></a>
+		</footer>
+
+	</body>
+</html>

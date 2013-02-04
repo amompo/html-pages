@@ -1,0 +1,30 @@
+.box.manage .card {
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.8s;
+}
+
+.box.manage:hover .card {
+	-webkit-transform: rotateY(180deg);				
+}
+
+.box.manage .face {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+}
+	
+.box.manage .flipcard {
+	float: left; position: absolute;
+}
+.box.manage .flipcard .front {
+	
+}
+.box.manage .flipcard .back {
+	-webkit-transform: rotateY(180deg);
+}
+		
+.box.manage .front {
+	z-index: 10;
+}
+.box.manage:hover .front {
+	z-index: 0;
+} 

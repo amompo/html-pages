@@ -1,0 +1,50 @@
+/* link_box */
+.box.link_box {
+	background-color: lightgray;
+	text-align: center;
+}
+
+.box.link_box.selectable:hover {
+	border: 3px solid dimgray;
+}
+
+
+.box.link_box .upper {
+	min-height: 66px;
+	max-height: 66px;
+	font-size: 20px;
+	background-color: dimgray;
+	color: silver;
+}
+
+.box.link_box .upper h3 {
+	padding: 0px;
+	vertical-align: middle;
+	padding-top: 15px;
+	margin: 0px;
+}
+
+.box.link_box .middle {
+	min-height: 180px;
+	max-height: 180px;
+}
+
+.box.link_box .lower {
+	min-height: 74px;
+	max-height: 74px;
+	font-size: 20px;
+	background-color: dimgray;
+	color: silver;
+	cursor: pointer
+}
+
+.box.link_box .lower h4 {
+	padding: 0px;
+	vertical-align: middle;
+	padding-top: 22px;
+	margin: 0px;
+	margin-right: 10px;
+	margin-left: 10px;
+	text-align: center;
+}
+
