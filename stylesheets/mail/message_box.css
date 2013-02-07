@@ -1,28 +1,55 @@
+.message.selectable:hover {
+	border: 3px solid gray;
+	cursor: pointer;
+}
+
+.threads,
+#system-message-list,
 #tenant-message-list {
 	float: right;
+	margin-bottom: 20px;
+	margin-top: 0px;
 }
 
+.threads,
 #landlord-message-list {
 	float: left;
+	margin-bottom: 20px;
+	margin-top: 0px;
+
 }
 
-ul.thread {
+ul.thread, .threads {
 	padding: 0px;
 }
+
+.threads li.message {
+	margin-bottom: 10px;
+}
+
+.threads li.message:last-child {
+	margin-bottom: 0px;
+}
+
 
 li.message {
 	list-style: none;
 	min-height: 170px;
-	max-width: 820px;
-	min-width: 820px;
-	background-color: white;
-	margin-bottom: 20px;	
+	max-width: 834px;
+	min-width: 834px;
+	background-color: white;	
 
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
-    overflow: hidden;   
+    overflow: hidden;
+
+    border: 3px solid transparent;
+}
+
+li.new_message {
+	background-color: orange;
 }
 
 li.landlord_message {
@@ -32,13 +59,23 @@ li.landlord_message {
 .message_date h5 {
 	color: dimgray;
 	font-size: 18px;
-	text-align: center;
+	text-align: left;
+	margin-left: 10px !important;
 	padding: 10px;
 	margin: 0px;
 }
+.landlord.thread .message_date h5 {
+	text-align: right;
+	margin-right: 10px;
+}
+
+li.new_message .message_date h5 {
+	color: black;
+
+}
 
 #landlord-message-list .message_date h5 {
-	color: lightgray;
+	color: orange;
 }
 
 
@@ -96,6 +133,10 @@ li.landlord_message {
 
     display: inline;
     float: right;
+}
+
+.landlord.thread .message_profile {
+	float: left;
 }
 
 
@@ -168,4 +209,52 @@ li.landlord_message {
 .landlord.thread #send-button button {
 	margin-right: 20px;
 	margin-left: auto;
+}
+
+/* tenant_message_box_in_list */
+.stats {
+	color: dimgray;
+	font-size: 18px;
+	text-align: left;
+	margin-left: 10px !important;
+	padding: 10px;
+	padding-left: 0px;
+	margin: 0px !important;
+}
+
+.stats h5 {
+	display: inline;	
+}
+
+.stats i.favorite_on {
+	color: red;
+}
+
+.stats i.icon-arrow-left {
+	color: yellow;
+}
+
+/* system_message_box_in_list */
+
+.system_message .message_profile {
+	background-color: dimgray;
+}
+
+.system_message .message_profile h6 {
+	color: silver;
+	font-size: 16px;
+}
+
+.system_message .message_text h3 {
+	font-size: 22px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	text-align: justify;
+	color: dimgray;
+}
+
+.system_message .message_text p {
+	margin-top: 10px;
 }

@@ -1,0 +1,72 @@
+/* threads */
+#upper-content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#lower-content {
+	min-height: 200px;
+	max-width: 980px;
+	min-width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 20px;
+	padding-bottom: 0px;
+	background-color: lightgray;
+
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
+    overflow: hidden;
+}
+
+/* Landlord thread list */
+.left-content {
+	min-width: 250px;
+	max-width: 260px;
+	min-height: 1053px;
+	margin-top: 20px;
+	background-color: dimgray;	
+
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
+    overflow: hidden;
+
+    display: inline;
+    float: left
+}
+
+.right-content {
+	min-height: 200px;
+	max-width: 836px;
+	min-width: 836px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	padding-bottom: 0px;
+	background-color: lightgray;
+
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
+    overflow: hidden;
+
+    display: inline;
+    float: right;
+}
+
+
+textarea#message {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);	
+    border: 1px solid transparent;
+}
+
+textarea#message:hover {
+    border: 1px solid black;
+}

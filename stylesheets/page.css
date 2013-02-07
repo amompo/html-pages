@@ -4,6 +4,15 @@
 	width: 1035px;
 }
 
+#content.mail {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1140px;
+/*	border: solid red 2px;*/
+	overflow: auto;
+	/*width: 100%	*/
+}
+
 #content.list_items {
 	float: left;	
 }
@@ -49,6 +58,7 @@ div#property-bottom-right {
 
 body{
 	background-color: silver;
+	margin: 0px;
 }
 
 .icon-mail:before         { content: "\f0e0"; }

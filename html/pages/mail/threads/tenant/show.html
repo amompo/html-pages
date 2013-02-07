@@ -1,1 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../../../bootstrap/css/my_bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/page.css">
+		<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/mail/message_box.css">
+		<link rel="stylesheet" type="text/css" href="../../../../../css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/bars.css">
+		<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/bars/header.css">
+		<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/bars/footer.css">
+		<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/bars/sub_footer.css">		
+		<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/box.css">
+		<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/box/square_photo.css">
+		<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/box/normal_area.css">
+		<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/box/normal_area/contact.css">
+		<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/box/normal_area/list_item.css">
+		<link rel="stylesheet" type="text/css" href="../../../../../stylesheets/mail.css">
+
+    	<script type="text/javascript" src="../../../../../javascripts/jquery-1.9.0.js"></script>
+    	<script type="text/javascript" src="../../../../../bootstrap/js/bootstrap.js"></script>
+
+    	<script type="text/javascript">
+			$(function() {
+				// Clear textarea default text when it gets focus (fx by click or tab)
+				$('textarea#message').focus(function() {
+					var item = $(this);
+					var text = item.text();
+					if (text == 'Write your description here...') {
+						item.text('');
+					}
+				});
+			});
+    	</script>
+	</head>
+	<body>
+		<header id="main-header-button" class="bar">
+			<div id="search-sentence">
+			</div>
+			<div id="search-results-counter">
+				<div class="counter">
+				</div>				
+			</div>
+			<div id="page-navigation">
+				<div class="navigation">
+					<button class="btn btn-primary btn-large">Rent your home</button>
+				</div>				
+			</div>
+		</header>
+
+		<div id="content" class="single_item">
+			<div id="upper-content">
+				<div id="profile" class="box square_photo selectable">
+					<div class="upper">
+						<img src="../../../../../images/alex-photo.png" width="240" height="240" />
+					</div>
+					<div class="middle">
+						<h3>Hi, I'm Alex</h3>
+					</div>
+
+					<div id="profile-location" class="lower location">
+						<h4>Copenhagen - Denmark</h4>
+					</div>
+				</div>		
+
+				<div class="box rounded normal_area list_item contact_options offline">
+					<div class="upper">
+						<h3>Current status</h3>
+						<div class="current_status">
+							<span class="user_name">Alex is offline now</span>
+							<span class="indicator icon-circle-blank offline_status"></span>
+						</div>
+					</div>
+
+					<div class="middle">				
+						<h3>Contact info:</h3>
+						<div class="phone_number">
+							<img src="../../../../../images/phone.png" width="32" height="32">
+							<h4>+45 69696969</h4>
+						</div>
+					</div>
+
+					<div class="lower">
+					</div>
+				</div>
+
+				<div class="box rounded normal_area list_item property selectable">
+					<div class="upper">
+						<img src="../../../../../images/photo4.png" width="240" height="180" />
+					</div>
+					
+					<div class="middle">				
+						<h3>Beautiful title</h3>
+						<ul class="display">
+							<li>55 m2 apartment on 4th floor</li>
+							<li>2/1 Furnished rooms</li>
+							<li>Valby, Copenhagen, DK</li>
+							<li>12/5/2012 - 12/5/2013</li>
+						</ul>
+					</div>
+
+					<div class="lower">
+						<div>
+							<h4 class="cost">6500 DKK</h4>
+							<ul class="actions">
+								<li class="lower icon-heart action favorite on"></li>
+								<li class="lower icon-globe action map"></li>
+							</ul>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div id="lower-content">
+				<ul id='tenant-message-list' class="thread">
+					<li class="tenant_message message">
+						<div class="message_date">
+							<h5>13:45 - 3/2/2013</h5>
+						</div>
+						<div class="message_content">
+							<div class="message_text">
+								<p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+							<div class="message_profile">
+								<div class="sender_photo">
+									<img src="../../../../../images/amanda.png">
+								</div>
+								<div class="sender_name">
+									<h6>You wrote</h6>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul id='landlord-message-list' class="thread landlord">
+					<li class="landlord_message message">
+						<div class="message_date">
+							<h5>13:45 - 3/2/2013</h5>
+						</div>
+						<div class="message_content">
+							<div class="message_text inverse">
+								<p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+							<div class="message_profile">
+								<div class="sender_photo">
+									<img src="../../../../../images/alex-photo.png">
+								</div>
+								<div class="sender_name">
+									<h6>Alex wrote</h6>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul id='tenant-message-list' class="thread">
+					<li class="tenant_message message">
+						<div class="message_content">
+							<div class="message_date">
+								<h5>New message</h5>
+							</div>
+							<div class="message_text_new">
+								<textarea id="message">Write your description here...</textarea>
+							</div>
+							<div class="message_profile">
+								<div class="sender_photo">
+									<img src="../../../../../images/amanda.png">
+								</div>
+								<div class="sender_name">
+									<h6>New</h6>
+								</div>
+							</div>
+						</div>
+						<div id="send-button">
+								<button class="btn btn-primary btn-large">Send</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer class="bar">
+			<div id="company-logo" class="section">
+				<img src="../../../../../images/swan_blured.png">
+			</div>
+			<div id="registered-user" class="section">
+				<span>
+					<div id="log_out">
+						<i class="icon-unlock"></i>
+						<span>"username"</span>
+					</div>
+				</span>
+			</div>
+			<div id="registered-navigation-buttons" class="section">
+				<div class="items">
+					<span id="nav-search" class="nav_item">
+						<i class="icon-search"></i>
+						<span class="badge badge-warning search_count counter">4</span>
+					</span>
+					<span id="nav-favorites" class="nav_item">
+						<i class="icon-heart"></i>
+						<span class="badge badge-warning favorites_count counter">6</span>
+					</span>
+					<span id="nav-mail" class="nav_item">
+						<i class="icon-mail"></i>
+						<span class="badge badge-warning mail_count counter">8</span>
+					</span>
+
+				</div>				
+			</div>
+			<div id="registered-preferences" class="section">
+				<div id="countries" class="flags">
+					<span>
+						<img src="../../../../../images/danish.png">
+					</span>
+					<span>
+						<img src="../../../../../images/english.png">
+					</span>				
+				</div>
+			</div>		
+		</footer>
+		<footer id="sub-footer">
+			<div id="company-address" class="section">
+				<div id="adress-label">
+					<p>Danrent.dk &copy Maglekildevej. Frederiksberg, Denmark.</p>
+				</div>
+			</div>
+
+			<div id="social-follow" class="section">
+				<div id="items">
+					<span id="facebook-follow">
+						<i class="icon-facebook-sign"></i>
+					</span>
+
+					<span id="twitter-follow">
+						<i class="icon-twitter-sign"></i>
+					</span>
+				</div>
+			</div>
+		</footer>
+
+
+		<footer>
+			<a href="../../../../../welcome.html"><img src="../../../../../images/home.png" width="50" height="50"></a>
+		</footer>
+
+	</body>
+</html>
 show.html

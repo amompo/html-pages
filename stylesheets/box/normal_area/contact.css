@@ -1,56 +1,94 @@
 /* Contact options */
+
 .box.normal_area.list_item.contact_options {
 	background-color: darkgray;
 }
 
-.box.normal_area.list_item.contact_options * {
-	padding: 0px;
-	vertical-align: middle;
+.box.normal_area.list_item.contact_options .upper,
+.box.normal_area.list_item.contact_options .middle
+ {
 	padding-left: 10px;
-	margin: 0px;	
+	padding-bottom: 0px;	
+	margin-bottom: 0px;			
 }
 
 .box.normal_area.list_item.contact_options h3 {
 	color: orange;
-	padding-top: 15px;
-	padding-bottom: 10px;
+	font-size: 20px;
+
+	padding-top: 0px;	
+	margin-top: 0px;		
+	padding-bottom: 0px;	
+	margin-bottom: 0px;		
 } 
 
 .box.normal_area.list_item.contact_options h4 {
 	color: dimgray;
 	padding-top: 4px;
 	font-size: 24px;
+
+	padding-top: 0px;	
+	margin-top: 0px;		
+	padding-bottom: 0px;	
+	margin-bottom: 0px;
 } 
 
-.box.normal_area.list_item.contact_options p {
-	color: dimgray;
+
+/* upper */
+
+.box.normal_area.list_item.contact_options .upper h3 {
 	padding-top: 10px;
-	display: inline;
-	font-size: 20px;
-} 
-
-
-.box.normal_area.list_item.contact_options span {
 	color: orange;
-	padding-top: 5px;
+}
+
+.box.normal_area.list_item.contact_options .upper .indicator {
+	color: orange;
+	padding-top: 2px;
 	float: right;
 	margin: 0px;
 	padding-right: 20px;
 	display: inline;
-} 
+}
 
+.box.normal_area.list_item.contact_options .upper .current_status {
+	padding-top: 10px;
+}
 
-.box.normal_area.list_item.contact_options img {
+.box.normal_area.list_item.contact_options .upper .current_status {
+	color: white;
+}
+
+/* middle */
+
+.box.normal_area.list_item.contact_options .middle h3 {
+	color: orange;
+	padding-left: 0px;
+}
+
+.box.normal_area.list_item.contact_options .middle img {
 	float: left;
 	margin: 0px;
 	display: inline;
 	padding-right: 20px;
 }
 
+.box.normal_area.list_item.contact_options .middle .phone_number {
+	padding-top: 10px;	
+}
 
-.box.normal_area.list_item.contact_options a {
-	float: left;
-	margin: 0px;
-	display: inline;
-	padding-right: 20px;
+.contact_options .upper ul#contact-hours {
+	padding-top: 0px;
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	color: white;	
+	padding-top: 10px;	
+	margin-top: 0px;		
+	padding-bottom: 0px;	
+	margin-bottom: 0px;
+
+}
+
+.contact_options .upper ul#contact-hours li {
+	padding-bottom: 2px;	
 }

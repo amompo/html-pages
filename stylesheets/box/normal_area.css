@@ -16,8 +16,8 @@
 }
 
 .box.normal_area .lower {
-	min-height: 30px;
-	max-height: 30px;
+	min-height: 31px;
+	max-height: 31px;
 	background-color: dimgray;
 	color: orange;
 }

@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="../../bootstrap/css/my_bootstrap.css">		
-		<link rel="stylesheet" type="text/css" href="../../css/font-awesome.css">
-		<link rel="stylesheet" type="text/css" href="../../stylesheets/page.css">
-		<link rel="stylesheet" type="text/css" href="../../stylesheets/pages/cover_page.css">
-		<link rel="stylesheet" type="text/css" href="../../stylesheets/bars.css">
-		<link rel="stylesheet" type="text/css" href="../../stylesheets/bars/header.css">
-		<link rel="stylesheet" type="text/css" href="../../stylesheets/bars/footer.css">
-		<link rel="stylesheet" type="text/css" href="../../stylesheets/box.css">
-		<link rel="stylesheet" type="text/css" href="../../stylesheets/box/normal_area.css">
-		<link rel="stylesheet" type="text/css" href="../../stylesheets/box/normal_area/list_item.css">
-		<link rel="stylesheet" type="text/css" href="../../stylesheets/bars/sub_footer.css">
+		<link rel="stylesheet" href="bootstrap/css/my_bootstrap.css">		
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/page.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/pages/cover_page.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/bars.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/bars/header.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/bars/footer.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/box.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/box/normal_area.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/box/normal_area/list_item.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/bars/sub_footer.css">
 		<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
     
 		<!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap-responsive.css"> -->
-    	<script type="text/javascript" src="../../bootstrap/js/bootstrap.js"></script>
+    	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    	<script type="text/javascript">
+function clickclear(thisfield, defaulttext) {
+if (thisfield.value == defaulttext) {
+thisfield.value = "";
+}
+}
+function clickrecall(thisfield, defaulttext) {
+if (thisfield.value == "") {
+thisfield.value = defaulttext;
+}
+}
+</script>
 
 	</head>
 
@@ -23,12 +35,12 @@
 		<header id="cover-slider">
 			<h1 id="company-title"><span id="company-name">Danrent</span><span class="dot">.</span><span id="company-domain">dk</span></h1>
 			<div id="photo-gallery">
-				<img src="../../images/loft.jpg">
+				<img src="images/loft.jpg">
 			</div>
 			<div id="options-bar">
 				<div id="quick-search" class="search_form" action="input">
-					<input type="text" value="Where are you moving to?"></input>
-					<button class="btn btn-primary"><i class="icon-white icon-search"></i> Search</button>
+					<input id="search-bar" type="text" value="Where are you moving to?" name="myfield" onclick="clickclear(this,'default text')" onblur="clickrecall(this,'default text')"></input>
+					<a href="html/pages/properties/property_list_page.html"><button class="btn btn-primary"><i class="icon-white icon-search"></i> Search</button></a>
 				</div>
 				<div id="rent-home-button">
 					<button class="btn btn-primary btn-large">Rent your home</button>
@@ -37,10 +49,10 @@
 		</header>
 
 		<div id="content-list-items" class="featured_ads">
-			<a href=""></a>
+			<a href="html/pages/properties/show.html">
 				<div class="box small rounded normal_area list_item property rentability good selectable">
 					<div class="upper">
-						<img src="../../images/nyhavn.jpg" width="240" height="180" />
+						<img src="images/nyhavn.jpg" width="240" height="180" />
 					</div>
 
 					<div class="lower">
@@ -50,10 +62,11 @@
 						</div>
 					</div>
 				</div>
-
+			</a>
+			<a href="html/pages/properties/show.html">
 				<div class="box small rounded normal_area list_item property rentability good selectable">
 					<div class="upper">
-						<img src="../../images/tivoli.jpg" width="240" height="180" />
+						<img src="images/tivoli.jpg" width="240" height="180" />
 					</div>
 
 					<div class="lower">
@@ -63,10 +76,11 @@
 						</div>
 					</div>
 				</div>
-
+			</a>
+			<a href="html/pages/properties/show.html">
 				<div class="box small rounded normal_area list_item property rentability good selectable">
 					<div class="upper">
-						<img src="../../images/loft.jpg" width="240" height="180" />
+						<img src="images/loft.jpg" width="240" height="180" />
 					</div>
 
 					<div class="lower">
@@ -76,10 +90,11 @@
 						</div>
 					</div>
 				</div>
-
+			</a>
+			<a href="html/pages/properties/show.html">
 				<div class="box small rounded normal_area list_item property rentability good selectable">
 					<div class="upper">
-						<img src="../../images/photo4.png" width="240" height="180" />
+						<img src="images/photo4.png" width="240" height="180" />
 					</div>
 
 					<div class="lower">
@@ -89,10 +104,12 @@
 						</div>
 					</div>
 				</div>
+			</a>
+			<a href="html/pages/properties/show.html">
 
 				<div class="box small rounded normal_area list_item property rentability good selectable">
 					<div class="upper">
-						<img src="../../images/house.jpg" width="240" height="180" />
+						<img src="images/house.jpg" width="240" height="180" />
 					</div>
 
 					<div class="lower">
@@ -102,10 +119,11 @@
 						</div>
 					</div>
 				</div>
-
+			</a>
+			<a href="html/pages/properties/show.html">	
 				<div class="box small rounded normal_area list_item property rentability good selectable">
 					<div class="upper">
-						<img src="../../images/photo4.png" width="240" height="180" />
+						<img src="images/photo4.png" width="240" height="180" />
 					</div>
 
 					<div class="lower">
@@ -115,12 +133,12 @@
 						</div>
 					</div>
 				</div>
-
+			</a>
 		</div>
 
 		<footer class="bar">
 			<div id="company-logo" class="section">
-				<img src="../../images/swan_blured.png">
+				<img src="images/swan_blured.png">
 			</div>
 			<div id="user" class="section">
 				<div id="login">
@@ -134,7 +152,7 @@
 						<span class="badge badge-warning">4</span>
 					</span>
 					<span id="nav-favorites">
-						<i class="icon-heart"></i>
+						<a href="html/pages/properties/favorites/index.html"><i class="icon-heart"></i></a>
 						<span class="badge badge-warning">6</span>
 					</span>
 				</div>				
@@ -142,10 +160,10 @@
 			<div id="preferences" class="section">
 				<div id="countries" class="flags">
 					<span>
-						<img src="../../images/danish.png">
+						<img src="images/danish.png">
 					</span>
 					<span>
-						<img src="../../images/english.png">
+						<img src="images/english.png">
 					</span>				
 				</div>
 			</div>		

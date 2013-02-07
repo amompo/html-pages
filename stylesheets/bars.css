@@ -28,3 +28,12 @@ header.bar {
 	-moz-box-align: center; 
 	box-align: center;
 }
+
+footer .nav_item:hover {
+	cursor: pointer;
+	color: dimgray;
+}
+
+footer .nav_item i:hover {
+	color: dimgray;
+}
